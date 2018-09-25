@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Извините</title>
+	<style type="text/css">
+		.btn{
+			background: royalblue;
+			width: 200px;
+			height: 70px;
+			border-radius: 10px;
+			border: 2px solid black;
+			color: red;
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn">Попросить прощения</button>
+	<script type="text/javascript">
+		let btn = document.querySelector(".btn")
+		let p = document.createElement("p")
+		document.body.appendChild(p)
+		btn.onclick = function(){
+			p.style.color = "red"
+			p.innerHTML = "Простите пожалуйста, Марта Маратовна!"
+		}
+	</script>
+</body>
+</html>
